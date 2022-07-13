@@ -5,6 +5,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- font -->
+
     <title>blog</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,21 +20,24 @@
 
 <body>
     <header>
-        <div>
-            <h2>logo</h2>
+        <div class="blog-logo">
+            <h2>company's logo</h2>
+        </div>
+        <div class="nav-menu">
             <nav>
                 <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">tech</a></li>
-                    <li><a href="#">business</a></li>
-                    <li><a href="#">sport</a></li>
-                    <li><a href="#">health</a></li>
-                    <li><a href="#">world</a></li>
-                    <li><a href="#">others</a></li>
-                    <li><a href="#">subscribe</a></li>
+                    <li> <a href="">home</a></li>
+                    <li> <a href="">News</a></li>
+                    <li> <a href="">sports</a></li>
+                    <li><a href="">Health</a></li>
+                    <li> <a href="">Business</a></li>
+                    <li><a href="">Politics</a></li>
+                    <li><a href="">entertainment</a></li>
+                    <li><a href="">others</a></li>
                 </ul>
             </nav>
         </div>
+        <div class="">search </div>
     </header>
     <main>
         <section class="home-layout">
@@ -59,7 +69,9 @@
             <section class="all-stories">
                 <div>
                     <div class="top-all-stories">
+
                         <img class="all-stories-img" src="/img/CB Social Content (1).png" alt="">
+
                         <div>
                             <h2> <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a> </h2>
                             <h6>Debitis maiores ab doloribus velit obcaecati veniam minus ipsum? Delectus sunt magni cupiditate nesciunt molestiae quidem ex quae, blanditiis rerum.</h6>
@@ -73,30 +85,37 @@
                 <aside class="aside">
                     <div class="aside-stories">
 
-                        <div>
+                        <div class="aside-stories-text-contnr">
                             <h2> <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a> </h2>
                             <p>Dolor sit amet consectetur elit.</p>
-                            <p><i>2hrs ago.</i> 1 mins read.</p>
+                            <p class="mini"><i>2hrs ago.</i> 1 mins read.</p>
                         </div>
-                        <img class="aside-img" src="/img/CB Social Content.png" alt="">
+                        <div>
+                            <img class="aside-img" src="/img/CB Social Content.png" alt="">
+
+                        </div>
                     </div>
                     <div class="aside-stories">
 
                         <div>
                             <h2> <a href="">amet ipsum dolor sit amet consectetur adipisicing elit.</a> </h2>
                             <p>Dolor sit amet consectetur elit.</p>
-                            <p><i>2hrs ago.</i> 1 mins read.</p>
+                            <p class="mini"><i>2hrs ago.</i> 1 mins read.</p>
                         </div>
-                        <img class="aside-img" src="img/CB Social Content (2).jfif" alt="">
+                        <div>
+                            <img class="aside-img" src="img/CB Social Content (2).jfif" alt="">
+                        </div>
                     </div>
                     <div class="aside-stories">
 
                         <div>
                             <h2> <a href=""> ipsum dolor sit amet consectetur adipisicing elit.</a> </h2>
                             <p>Dolor sit amet consectetur elit.</p>
-                            <p><i>2hrs ago.</i> 1 mins read.</p>
+                            <p class="mini"><i>2hrs ago.</i> 1 mins read.</p>
                         </div>
-                        <img class="aside-img" src="/img/Casas Bahia's New CB.jfif" alt="">
+                        <div>
+                            <img class="aside-img" src="/img/Casas Bahia's New CB.jfif" alt="">
+                        </div>
                     </div>
                 </aside>
 
@@ -110,10 +129,13 @@
                     <div>
                         <div class="big-one">
                             <img src="/img/Aeonix on Twitter.jfif" alt="">
-                            <h2><a href="">onsectetur adipisicing elit. Dolorum amet consectetur adipisicing elit. Lorem ipsum dolor sit amet ipsum dolor sit.</a></h2>
-                            <p class="big-one-text">Sit amet consectetur adipisicing elit.ipsum dolor sit amet consectetur adipisicing elit. Assumenda, blanditiis. Quisquam quod aspernatur sunt corrupti saepe ut doloribus at accusamus corporis reprehenderit?</p>
-                            <p><i>by a blogger </i></p>
-                            <p> 3 hrs ago<i> 3 mins read</i></p>
+                            <div>
+                                <h2 class=""><a href="">onsectetur adipisicing elit. Dolorum amet consectetur adipisicing elit. Lorem ipsum dolor sit amet ipsum dolor sit.</a></h2>
+                                <p class="big-one-text">Sit amet consectetur adipisicing elit.ipsum dolor sit amet consectetur adipisicing elit. Assumenda, blanditiis. Quisquam quod aspernatur sunt corrupti saepe ut doloribus at accusamus corporis reprehenderit?</p>
+                                <p class="mini"><i>by a blogger </i></p>
+                                <p class="mini"> 3 hrs ago<i> 3 mins read</i></p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -128,7 +150,7 @@
                         <div>
                             <h2> <a href="">amet ipsum dolor sit amet consectetur adipisicing elit.</a> </h2>
                             <p>Dolor sit amet consectetur elit.</p>
-                            <p><i>2hrs ago.</i> 1 mins read.</p>
+                            <p class="mini"><i>2hrs ago.</i> 1 mins read.</p>
                         </div>
 
                     </div>
@@ -137,7 +159,7 @@
                         <div>
                             <h2> <a href="">amet ipsum dolor sit amet consectetur adipisicing elit.</a> </h2>
                             <p>Dolor sit amet consectetur elit.</p>
-                            <p><i>2hrs ago.</i> 1 mins read.</p>
+                            <p class="mini"><i>2hrs ago.</i> 1 mins read.</p>
                         </div>
 
                     </div>
@@ -146,7 +168,7 @@
                         <div>
                             <h2> <a href="">amet ipsum dolor sit amet consectetur adipisicing elit.</a> </h2>
                             <p>Dolor sit amet consectetur elit.</p>
-                            <p><i>2hrs ago.</i> 1 mins read.</p>
+                            <p class="mini"><i>2hrs ago.</i> 1 mins read.</p>
                         </div>
 
                     </div>
@@ -155,7 +177,7 @@
                         <div>
                             <h2> <a href="">amet ipsum dolor sit amet consectetur adipisicing elit.</a> </h2>
                             <p>Dolor sit amet consectetur elit.</p>
-                            <p><i>2hrs ago.</i> 1 mins read.</p>
+                            <p class="mini"><i>2hrs ago.</i> 1 mins read.</p>
                         </div>
 
                     </div>
@@ -182,13 +204,11 @@
             </div>
         </div>
         <div class="footer">
-            <div class="footer-div-1">
-                <h2>blog</h2>
-                <p>copyright &copy;2022. All right reserved.</p>
-            </div>
+            <h2>blog</h2>
             <div class="oluwaferanmi">
                 developed by <a href=""><i>Oluwaferanmi.</i></a>
             </div>
+            <p>copyright &copy;2022. All right reserved.</p>
         </div>
     </footer>
     <script src="./life.js" async defer></script>
