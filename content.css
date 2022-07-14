@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+
+/* header css starts  */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -128,3 +131,81 @@ nav {
 #menuToggle input:checked~ul {
     transform: none;
 }
+
+
+/* header css ends  */
+
+
+/* main css starts  */
+
+main {
+    margin: 0 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* main css ends  */
+
+
+/* footer css starts  */
+
+footer {
+    overflow: hidden;
+}
+
+.footer {
+    border-top: 1px rgb(136, 132, 132) solid;
+    margin: 1em;
+    text-align: center;
+    text-transform: capitalize;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-div-1 {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.oluwaferanmi {
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.oluwaferanmi a {
+    text-decoration: none;
+    color: rgb(25, 85, 25);
+}
+
+.oluwaferanmi :hover {
+    color: red;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+    .footer h2 {
+        text-align: center;
+    }
+    .footer p,
+    .oluwaferanmi {
+        font-size: 0.5em;
+    }
+}
+
+
+/* footer css ends  */

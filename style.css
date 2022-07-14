@@ -2,6 +2,8 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
+            list-style-type: none;
+            text-decoration: none;
         }
         
         body {
@@ -10,9 +12,11 @@
         }
         /* header css starts  */
         
-        * {
-            list-style-type: none;
-            text-decoration: none;
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         
         header {
