@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+header {
+    margin-top: 1em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+    color: white;
+    background-color: rgb(3, 3, 3);
+    box-shadow: 2px -1px 26px 6px rgba(0, 0, 0, 0.75);
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+    padding: 1em 10em 0 10em;
+}
+
+.back-btn {
+    position: absolute;
+    font-size: 3em;
+    color: white;
+    top: 1em;
+    left: 19em;
+}
+
+.user-img {
+    font-size: 10em;
+}
+
+main {
+    background-color: white;
+    box-shadow: 2px -1px 26px 6px rgba(0, 0, 0, 0.75);
+    padding: 1em 10.15em;
+    text-align: center;
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+
+.username,
+.password {
+    margin-top: 1em;
+    font-size: 2em;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.user-label {
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.user-input {
+    font-size: 0.8em;
+    padding: 0.7em;
+}
+
+.submit {
+    margin: 1em 3em;
+}
+
+.submit p {
+    font-size: 2em;
+    color: white;
+    font-weight: 500;
+    background-color: red;
+    padding: 0.2em;
+}
+
+.forgot-password {
+    font-size: 1.3em;
+    margin-top: 1em;
+    text-transform: capitalize;
+}
+
+.forgot-password a,
+.submit p a,
+.sign-up {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.other-sign-in-option {
+    margin: 1em;
+    font-size: 2em;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.dont-have-an-account {
+    text-transform: capitalize;
+    align-items: center;
+}
+
+.sign-up {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
