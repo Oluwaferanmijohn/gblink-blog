@@ -25,12 +25,13 @@ header {
     display: flex;
     flex-direction: column;
     gap: 0.1em;
+    text-align: center;
     color: white;
     background-color: rgb(3, 3, 3);
     box-shadow: 2px -1px 26px 6px rgba(0, 0, 0, 0.75);
     border-top-left-radius: 3em;
     border-top-right-radius: 3em;
-    padding: 1em 10em 0 10em;
+    padding: 1em 16.35em 0 16.35em;
 }
 
 .back-btn {
@@ -46,7 +47,6 @@ header {
 }
 
 main {
-    overflow: hidden;
     background-color: white;
     box-shadow: 2px -1px 26px 6px rgba(0, 0, 0, 0.75);
     padding: 1em 10.15em;
@@ -150,11 +150,13 @@ main {
         flex-direction: column;
         gap: 0.1em;
         color: white;
+        text-align: center;
+        justify-content: center;
         background-color: rgb(3, 3, 3);
         box-shadow: 2px -1px 26px 6px rgba(0, 0, 0, 0.75);
         border-top-left-radius: 3em;
         border-top-right-radius: 3em;
-        padding: 1em 5em 0 5em;
+        padding: 1em 11.34em 0 11.34em;
     }
     main {
         background-color: white;
