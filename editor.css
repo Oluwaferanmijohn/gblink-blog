@@ -2,13 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
 }
 
 
 /* general color change  */
 
 .white {
-    color: white;
+    color: white !important;
 }
 
 .black {
@@ -31,8 +32,13 @@ html {
     left: 0;
     background-color: #111;
     overflow-x: hidden;
+    text-transform: capitalize;
     padding-top: 60px;
     transition: 0.5s;
+}
+
+.sidebar i {
+    font-size: 3em;
 }
 
 .sidebar a {
@@ -80,6 +86,7 @@ html {
     background: none;
     width: 100%;
     text-align: center;
+    text-transform: capitalize;
     cursor: pointer;
     outline: none;
 }
@@ -90,7 +97,6 @@ html {
 
 .dropdown-container {
     display: none;
-    background-color: #262626;
     padding-left: 8px;
 }
 
@@ -100,6 +106,7 @@ html {
 }
 
 .balance {
+    margin: 1em 2em;
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -110,7 +117,7 @@ html {
 }
 
 .views {
-    margin-top: 1em;
+    margin: 1em 2em;
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -118,6 +125,33 @@ html {
     text-transform: uppercase;
     text-align: center;
     background-color: rgb(255, 255, 255);
+}
+
+.withdraw-ctnr {
+    text-align: center;
+    display: flex;
+    color: white;
+    flex-direction: column;
+}
+
+.withdraw-ctnr input {
+    padding: 0.5em;
+    margin: 1em;
+}
+
+.withdraw-ctnr div {
+    margin-top: 1em;
+}
+
+.withdraw-ctnr div button {
+    padding: 1em;
+    border: none;
+    text-transform: uppercase;
+}
+
+.log-out {
+    display: flex;
+    align-items: center;
 }
 
 main,
