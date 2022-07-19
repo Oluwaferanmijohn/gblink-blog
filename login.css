@@ -16,7 +16,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 
 header {
@@ -31,14 +30,6 @@ header {
     border-top-left-radius: 3em;
     border-top-right-radius: 3em;
     padding: 1em 10em 0 10em;
-}
-
-.back-btn {
-    position: absolute;
-    font-size: 3em;
-    color: white;
-    top: 1em;
-    left: 19em;
 }
 
 .user-img {
