@@ -5,50 +5,133 @@
 }
 
 
+/* general color change  */
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+
+/* general color change  */
+
+
 /* html {
     font-size: 62.5%
 } */
 
-header {
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.balance {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em 3em;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.views {
     margin-top: 1em;
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    justify-content: center;
+    gap: 2em;
+    padding: 2em 3em;
+    text-transform: uppercase;
     text-align: center;
-    align-items: center;
+    background-color: rgb(255, 255, 255);
 }
 
-main {
-    margin: 2em 6em;
-    background-color: red;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    gap: 1em;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
-
-.logo {
-    width: 10em;
-    height: 5em;
-}
-
-.profile-picture {
-    width: 10em;
-    height: 10em;
-    border-radius: 50%;
-}
-
-header h2 {
-    text-transform: capitalize;
-}
-
-.setting {
-    background-color: grey;
-}
-
+main,
+header,
 footer {
-    text-align: center;
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
 }

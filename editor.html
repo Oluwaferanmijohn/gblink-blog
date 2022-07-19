@@ -19,71 +19,45 @@
 
 <body>
     <header>
-        <img class="logo" src="/img/logo.png" alt="">
+        <button class="openbtn" onclick="openNav()">&#9776; menu</button>
+        <div id="mySidebar" class="sidebar">
+            <div class="balance black">
+                <h4>points earned</h4>
+                <h3>1000 <strong>pts</strong></h3>
+            </div>
+            <button class="dropdown-btn">withdraw</button>
+            <div class="dropdown-container withdraw-ctnr ">
+                <input placeholder="Enter Amount" type="number" name="amount" id="amount">
+                <div>
+                    <button type="submit">withdraw</button>
+                </div>
+            </div>
+            <div class=" views black">
+                <h4>total number of views: </h4>
+                <h3>200 <strong>views</strong></h3>
+            </div>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <a href="#">change mode</a>
+            <button class="dropdown-btn">profile</button>
+            <div class="dropdown-container">
+                <a href="#">upload profile picture</a>
+                <a href="#"></a>
+                <a href="#">contact us</a>
+            </div>
+            <a href="#">deactivate account </a>
+            <a href="#">log out</a>
+        </div>
+
 
     </header>
     <main>
-        <section class="top-main">
-            <h2> welcome gblink</h2>
-            <img class="profile-picture" src="/img/Aeonix on Twitter.jfif" alt="">
 
-            <section class="write-up">
-                <div>
-                    <input placeholder="enter story title" type="text" name="title" id="title">
-                </div>
-                <div>
-                    <textarea placeholder="write story here" name="" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <h2>add images</h2>
-                </div>
-                <div>
-                    <h6>post</h6>
-                </div>
-            </section>
-        </section>
-        <section class="setting">
-            <h2>settings</h2>
-            <div>
-                <h2>change profile picture </h2>
-            </div>
-            <div>
-                <h2>change your username </h2>
-            </div>
-            <div>
-                <h2> change your passowrd</h2>
-            </div>
-            <div>
-                <h2>contact admin</h2>
-            </div>
-            <div>
-                <h2>withdraw</h2>
-            </div>
-        </section>
     </main>
     <footer>
-
-        <table id="story history">
-            <tr>
-                <th>titles</th>
-                <th>no of views</th>
-            </tr>
-            <tr>
-                <th>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolorum?</th>
-                <th>20 </th>
-            </tr>
-            <tr>
-                <th>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolorum?</th>
-                <th>20 </th>
-            </tr>
-            <tr>
-                <th>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, dolorum?</th>
-                <th>20 </th>
-            </tr>
-        </table>
     </footer>
     <script src="https://kit.fontawesome.com/dff98c45d4.js" crossorigin="anonymous"></script>
     <script src="./editor.js" async defer></script>
 </body>
 
-</html>s
+</html
