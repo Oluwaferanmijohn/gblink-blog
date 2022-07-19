@@ -24,6 +24,9 @@
                 width: 4em;
                 height: 2em;
             }
+            #menu li a {
+                font-size: 2em !important;
+            }
         }
         
         body {
@@ -479,13 +482,14 @@
             .other-news {
                 grid-template-columns: 350px;
                 gap: 3em;
+                margin-top: 6em !important;
                 margin: 0.3em;
             }
             .news-container h2 {
                 text-transform: capitalize;
                 font-size: 1em;
                 text-decoration: underline;
-                height: 19px;
+                height: 13px;
                 border-bottom: 1px rgb(155, 155, 155) solid;
             }
             .big-one {
