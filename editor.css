@@ -95,9 +95,33 @@ html {
     background-color: #444;
 }
 
+.display {
+    justify-content: center;
+    display: flex;
+    gap: 0.3em;
+    align-items: center;
+}
+
+.display div i {
+    font-size: 1.4em;
+}
+
+.display div {
+    font-family: 'Edu VIC WA NT Beginner', cursive !important;
+}
+
 .dropdown-container {
     display: none;
-    padding-left: 8px;
+}
+
+.dropdown-container ul li {
+    font-family: 'Edu VIC WA NT Beginner', cursive !important;
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+    text-align: center;
+    align-items: center;
+    font-size: 2em;
 }
 
 .fa-caret-down {
@@ -127,6 +151,11 @@ html {
     background-color: rgb(255, 255, 255);
 }
 
+.views h3,
+.balance h3 {
+    font-family: 'Edu VIC WA NT Beginner', cursive !important;
+}
+
 .withdraw-ctnr {
     text-align: center;
     display: flex;
@@ -137,6 +166,7 @@ html {
 .withdraw-ctnr input {
     padding: 0.5em;
     margin: 1em;
+    color: white;
 }
 
 .withdraw-ctnr div {
@@ -150,8 +180,10 @@ html {
 }
 
 .log-out {
+    font-size: 1.2em !important;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 main,
