@@ -206,9 +206,90 @@
     main p {
         font-size: 1.5em !important;
     }
+    
+    .comments-section {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 4em;
+        padding: 0.5em;
+    }
+    
+    .comment,
+    .comment-contnr,
+    .comment-contnr div {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    
+     ::placeholder {
+        text-transform: capitalize;
+        font-size: 1em;
+    }
+    
+    .comment-contnr div label {
+        text-transform: capitalize;
+        font-size: 1.5em;
+    }
+    
+    .comment-contnr div input,
+    .comment-contnr textarea {
+        padding: 0.5em;
+    }
+    
+    .comment-contnr button {
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-weight: 500;
+        background-color: red;
+        border: none;
+        font-size: 2em;
+        padding: 0.3em;
+        margin: 0 4em;
+    }
+    
+    .people-comment-container {
+        display: flex;
+        gap: 1em;
+        text-align: left;
+        margin-top: 2em;
+        align-items: center;
+    }
+    
+    .people-comment-div-1 {
+        display: block;
+        height: 27em;
+        overflow: scroll;
+    }
+    
+    .people-comment div i {
+        font-size: 3em;
+        border: 1px rgb(0, 0, 0) solid;
+        border-radius: 50%;
+        padding: 0.4em;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    
+    .people-comment-container div h3 {
+        font-size: 2em;
+        text-transform: capitalize;
+    }
+    
+    .people-comment-container div p {
+        font-size: 1.2em !important;
+    }
     /* media quary */
     
     @media screen and (max-width: 800px) {
+        .comments-section {
+            display: flex;
+            flex-direction: column;
+        }
         .major-img {
             width: 30em;
             height: 20em;
