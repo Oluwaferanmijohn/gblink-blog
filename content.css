@@ -309,6 +309,7 @@
         display: flex;
         flex-direction: column;
         gap: 1em;
+        border-bottom: 1px solid grey;
     }
     /* other news  */
     /* media quary */
@@ -317,6 +318,30 @@
         .comments-section {
             display: flex;
             flex-direction: column;
+        }
+        textarea {
+            width: 21em;
+            height: 7em;
+        }
+        .people-comment div i {
+            font-size: 2em;
+            border: 1px rgb(0, 0, 0) solid;
+            border-radius: 50%;
+            padding: 0.4em;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+        .people-comment-container div h3,
+        .other-news-text h2 {
+            font-size: 1.5em;
+            text-transform: capitalize;
+        }
+        .people-comment-container div p,
+        .other-news-text p,
+        .other-news-text div p {
+            font-size: 1.0em !important;
         }
         .major-img {
             width: 30em;
