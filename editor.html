@@ -25,7 +25,6 @@
         <button class="openbtn" onclick="openNav()">&#9776; menu</button>
         <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <i class="dark-mode white fa-solid fa-toggle-on"></i>
             <div class="balance black">
                 <h4>points earned</h4>
                 <h3>1000 <strong>pts</strong></h3>
@@ -36,34 +35,12 @@
                 <h4>total number of views: </h4>
                 <h3>200 <strong>views</strong></h3>
             </div>
-            <div class="withdraw-ctnr ">
-                <h2>withdraw</h2>
+            <div class="withdraw-ctnr">
+                <h2>make withdrawal</h2>
 
-                <input placeholder="Enter Exact Amount" type="number" name="amount" id="amount">
+                <input placeholder="Enter Amount" type="number" name="amount" id="amount">
                 <div>
-                    <button type="submit">withdraw</button>
-                </div>
-            </div>
-
-            <button class="dropdown-btn">
-                <div class="display white">
-                     profile
-                    <div>
-                        <i class="fa-solid fa-caret-down"></i>
-                    </div>
-                </div>
-            </button>
-            <div class="dropdown-container">
-                <ul>
-                    <li href="#">upload profile picture</li>
-                    <li href="#">contact us</li>
-                </ul>
-
-            </div>
-            <div class="log-out">
-                <a class="white " href="#">log out</a>
-                <div>
-                    <i class="white fa-solid fa-right-from-bracket"></i>
+                    <a href="">withdraw</a>
                 </div>
             </div>
         </div>
@@ -71,7 +48,55 @@
 
     </header>
     <main>
+        <section class="grid">
+            <section class="head">
+                <div class="head-container">
+                    <div>
+                        <h2>
+                            editor's page
+                        </h2>
+                    </div>
+                    <div class="img-div">
+                        <img src="/img/Gaming Community.jfif" alt="">
+                    </div>
+                    <div>
+                        <h2>oluwaferanmi john </h2>
+                        <h3>oluwatoyinferanmijohn@gmail.com</h3>
+                    </div>
+                </div>
+                <section class="head-container post-news">
+                    <div class="text-header-container">
+                        <input placeholder="enter story title " type="text" name="" id="">
+                    </div>
 
+                    <div class="mini-story-container">
+                        <p>
+                            for this aspect, you are to enter the captivating aspect of the story. this aspect appears at the headline of the front page and this part entize the reader to be moved to read more about your write up. <br> <br> note, this
+                            aspect must not be up to 20 words.
+                        </p>
+                        <textarea class="textarea1" placeholder="enter introduction header " name="miniStory" id="mini-story" cols="10" rows="50"></textarea>
+                    </div>
+                    <div class="main-story-container">
+                        <p>the text area in this section, will contain the main content of your story. be detailed, factful and avoid typographic errors. <br>
+                            <br> note, this aspect can contain as much text as possible. take your time.</p>
+                        <textarea class="textarea2" placeholder="enter full story here " name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+
+                </section>
+                <div class="post-btn">
+                    <a href="">post</a>
+                </div>
+            </section>
+            <!-- <section class="history">
+                <h2>history</h2>
+            </section> -->
+        </section>
+
+        <!-- <section class="advertise">
+            <h2>
+                place an ad
+            </h2>
+        </section> -->
     </main>
     <footer>
     </footer>

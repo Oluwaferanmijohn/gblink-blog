@@ -70,6 +70,8 @@ html {
     color: white;
     padding: 10px 15px;
     border: none;
+    position: fixed;
+    top: 0;
 }
 
 .dropdown-btn:hover {
@@ -86,6 +88,8 @@ html {
     background: none;
     width: 100%;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     text-transform: capitalize;
     cursor: pointer;
     outline: none;
@@ -130,7 +134,7 @@ html {
 }
 
 .balance {
-    margin: 1em 2em;
+    margin: 6em 2em 1em 2em;
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -157,15 +161,20 @@ html {
 }
 
 .withdraw-ctnr {
+    background-color: white;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 3em;
     display: flex;
-    color: white;
+    color: rgb(0, 0, 0);
     flex-direction: column;
 }
 
 .withdraw-ctnr input {
     padding: 0.5em;
-    margin: 1em;
+    margin-left: 0.3em;
+    width: 12em;
     color: white;
 }
 
@@ -173,10 +182,19 @@ html {
     margin-top: 1em;
 }
 
-.withdraw-ctnr div button {
-    padding: 1em;
+.withdraw-ctnr div a {
+    padding: 0.3em;
+    margin: 0.2em 3em;
+    background-color: red;
     border: none;
+    color: white;
+    font-size: 1.4em;
     text-transform: uppercase;
+}
+
+.withdraw-ctnr div :hover {
+    color: red;
+    background-color: white;
 }
 
 .log-out {
@@ -186,18 +204,169 @@ html {
     justify-content: center;
 }
 
-main,
-header,
-footer {
-    transition: margin-left .5s;
-    padding: 20px;
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    font-size: 1.7em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: capitalize;
 }
 
-@media screen and (max-height: 450px) {
+::placeholder {
+    text-transform: capitalize;
+    font-size: 1.2em;
+}
+
+input {
+    width: 20em;
+    margin-top: 2em;
+}
+
+input,
+textarea {
+    padding: 0.5em;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.textarea1 {
+    width: 30em;
+    height: 5em;
+}
+
+.textarea2 {
+    width: 30em;
+    height: 15em;
+}
+
+.text-header-container {
+    color: black;
+}
+
+.mini-story-container {
+    height: 15em;
+    background-color: black;
+    color: white;
+    border-radius: 2em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-story-container {
+    height: 20em;
+    background-color: black;
+    color: white;
+    border-radius: 2em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+} */
+
+.head-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2em;
+}
+
+.img-div img {
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+}
+
+.post-news p {
+    width: 30em;
+}
+
+.post-btn {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.post-btn :hover {
+    transition: 1s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(85, 14, 14);
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.post-btn a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    background-color: red;
+    padding: 0.3em;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 800px) {
     .sidebar {
         padding-top: 15px;
     }
     .sidebar a {
         font-size: 18px;
+    }
+    main {
+        margin: 1em;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    h3,
+    p {
+        font-size: 0.8em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    input,
+    textarea {
+        padding: 0.2em;
+    }
+    .textarea1 {
+        width: 20em;
+        height: 5em;
+    }
+    .textarea2 {
+        width: 20em;
+        height: 18em;
+    }
+    .mini-story-container p,
+    .main-story-container p {
+        max-width: 20em;
+    }
+    .mini-story-container {
+        height: 20em;
+    }
+    .main-story-container {
+        height: 26em;
+    }
+    .post-btn a {
+        font-size: 1em;
     }
 }
