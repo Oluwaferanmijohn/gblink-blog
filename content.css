@@ -212,6 +212,8 @@
         grid-template-columns: 1fr 3fr;
         gap: 4em;
         padding: 0.5em;
+        overflow: hidden;
+        margin-bottom: 3em;
     }
     
     .comment,
@@ -283,6 +285,30 @@
     .people-comment-container div p {
         font-size: 1.2em !important;
     }
+    /* other news  */
+    
+    .other-news {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+        height: 30em;
+        overflow: hidden;
+    }
+    
+    .other-news-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        overflow: scroll;
+        gap: 5em;
+    }
+    
+    .other-news-text {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    /* other news  */
     /* media quary */
     
     @media screen and (max-width: 800px) {
