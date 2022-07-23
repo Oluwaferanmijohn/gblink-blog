@@ -1,49 +1,57 @@
-const commentDisplay = document.querySelector('.comments')
+const button = document.querySelector("#button");
+const commentList = document.querySelector("#comment-list");
 
+showComments();
 
-let localcomments = [
+function myFunction() {
+    var username = document.getElementById("name").value; //getting value of input field
+    var comment = document.getElementById("comment").value;
+    let storage = localStorage.getItem("New Comments"); //getting localstorage
 
-    {
-        name: "phenry",
-        PComment: "This a very touching situation and the situation is getting quite alarming. keep up the good job."
+    if (storage == null) {
+        listArr = [];
+    } else {
+        listArr = JSON.parse(storage);
     }
-];
-let comment = JSON.parse(localStorage.getItem('comment'))
-if (!comment) {
-    comment = localcomments
-    localStorage.setItem('comment', JSON.stringify(localcomments))
+
+    listArr.push(
+        //pushing or adding new value in array
+        "<span>" +
+        "<img src = 'user.png'/>" +
+        name +
+        "<br/>" +
+        "</span>" +
+        "<br>" +
+        comment
+    );
+    localStorage.setItem("New Comments", JSON.stringify(listArr));
+
+    showComments(); //calling showComments function
 }
-let count = 0
-    // read on json and event
-function generateRandomNumber() {
-    const el = comment[count];
-    commentDisplay.innerHTML = `<h3>${el.name}</h3>
-                            <p>${el.PComment}</p>
+
+function showComments() {
+    let storage = localStorage.getItem("New Comments");
+
+    if (storage == null) {
+        listArr = []; //create a blank array
+    } else {
+        listArr = JSON.parse(storage); //transforming json string into a js object
+    }
+
+    let liTag = "";
+
+    listArr.forEach((element, index) => {
+        liTag += ` <div class="people-comment-container">
+                        <div>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div>
+                            <h3>${index.username}</h3>
+                            <p>${index.comment}</p>
                             <p><strong>3hrs ago </strong> </p>
-                            `
+                        </div>
+                    </div>`;
+    });
 
-    count = count < quotes.length - 1 ? count + 1 : 0
+    commentList.innerHTML = liTag;
 }
-generateRandomNumber()
-
-
-// let quotes = JSON.parse(localStorage.getItem('quotes')) || [];
-
-// function addQuote() {
-//     let quoteInput = document.querySelector('#new-quote')
-//     let authorInput = document.querySelector('#new-author')
-//     let priceInput = document.querySelector('#p-price')
-//     let linkInput = document.querySelector('#p-link')
-//     let quote = quoteInput.value
-//     let author = authorInput.value
-//     let price = priceInput.value
-//     let link = linkInput.value
-//     quotes.push({ quote, author, price, link })
-//     quoteInput.value = ''
-//     authorInput.value = ''
-//     priceInput.value = ''
-//     linkInput.value = ''
-
-//     localStorage.setItem('quotes', JSON.stringify(quotes))
-//     console.log(quotes);
-// }

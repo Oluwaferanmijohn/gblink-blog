@@ -8,6 +8,7 @@
         /* search button */
         
         .form {
+            z-index: -1;
             position: relative;
             transition: all 1s;
             width: 40px;
@@ -99,6 +100,7 @@
         }
         
         header {
+            z-index: 3;
             display: flex;
             justify-content: space-between;
             padding: 1em 1em;
@@ -486,6 +488,8 @@
         }
         
         .big-one {
+            max-width: 50em;
+            max-height: 60em;
             text-align: center;
             margin: 0 2em 0 2em;
         }
